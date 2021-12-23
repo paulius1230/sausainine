@@ -27,7 +27,7 @@ if (isset ($_POST["slapukas_2"])){
     $vartotojoVardas = $_POST["vartotojo_vardas"];
     $slaptazodis = $_POST["slaptazodis"];
     
-    $sql = "SELECT vartotojo_vardas, slaptazodis FROM users WHERE vartotojo_vardas LIKE '%$vartotojoVardas%' AND slaptazodis LIKE '%$slaptazodis%'";
+    $sql = "SELECT vartotojo_vardas, slaptazodis FROM users WHERE vartotojo_vardas LIKE '$vartotojoVardas' AND slaptazodis LIKE '$slaptazodis'";
     $result = mysqli_query($link, $sql);
     
     
