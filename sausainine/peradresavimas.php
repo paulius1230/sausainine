@@ -14,7 +14,7 @@
   
 
   if (mysqli_errno($link)) {
-  echo "<h1>Vartotojo vardas užimtas</h1>";
+  echo "<h1>Vartotojo vardas užimtas</h1>"; //Reikia uždėti unikalu raktą (unique) ant vartotojo_vardas sql duombazeje
   }
   else
   {
