@@ -12,9 +12,9 @@
   $informacija = "INSERT INTO users VALUES ('".$_POST["vardas"]."', '".$_POST["pavarde"]."', '".$_POST["vartotojo_vardas"]."', '".$_POST["slaptazodis"]."', '".$_POST["elpastas"]."')";
   mysqli_query($link, $informacija);
   
-
+  //Reikia uždėti unikalų raktą (unique) ant vartotojo_vardas sql duombazeje
   if (mysqli_errno($link)) {
-  echo "<h1>Vartotojo vardas užimtas</h1>"; //Reikia uždėti unikalų raktą (unique) ant vartotojo_vardas sql duombazeje
+  echo "<h1>Vartotojo vardas užimtas</h1>"; 
   }
   else
   {
